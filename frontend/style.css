@@ -124,8 +124,8 @@ nav a:hover{
     color:var(--cyan);
 }
 
-section{
-    padding:120px 80px;
+section {
+    padding: 100px 20px;
 }
 
 section h2{
@@ -232,12 +232,9 @@ section h2{
 }
 
 #project-container{
-
     display:grid;
-
     grid-template-columns:
-    repeat(auto-fit,minmax(320px,1fr));
-
+    repeat(auto-fit,minmax(280px,1fr));
     gap:25px;
 }
 
@@ -604,6 +601,243 @@ footer{
 
     margin-right:10px;
 }
+@media (max-width: 768px) {
 
+    nav {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
 
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+}
+@media (max-width: 768px) {
+
+    .hero-name {
+        font-size: 2.5rem;
+    }
+
+    #typing {
+        font-size: 1.5rem;
+    }
+
+    .hero-desc {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+@media (max-width:480px){
+
+    .hero-name{
+        font-size:2rem;
+    }
+
+    section h2{
+        font-size:2rem;
+    }
+
+    .skill-card{
+        width:100%;
+    }
+
+    .project-card{
+        padding:20px;
+    }
+
+}
+@media (max-width:768px){
+
+    .hero-name::after{
+        width:250px;
+        height:150px;
+    }
+
+}
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* Tablets */
+@media screen and (max-width: 768px){
+
+    nav{
+        padding:15px 20px;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav h2{
+        font-size:1.5rem;
+    }
+
+    .hero{
+        min-height:100vh;
+        padding:100px 20px 40px;
+    }
+
+    .hero-name{
+        font-size:3rem;
+    }
+
+    #typing{
+        font-size:1.6rem;
+    }
+
+    .hero-desc{
+        font-size:1rem;
+        max-width:90%;
+        padding:0 10px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero-name::after{
+        width:300px;
+        height:180px;
+    }
+
+    section{
+        padding:80px 20px;
+    }
+
+    section h2{
+        font-size:2rem;
+    }
+
+    .project-card img{
+        height:200px;
+    }
+
+    .skills-container{
+        justify-content:center;
+    }
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 480px){
+
+    nav{
+        padding:12px;
+    }
+
+    nav ul{
+        gap:10px;
+        font-size:0.9rem;
+    }
+
+    nav h2{
+        font-size:1.3rem;
+    }
+
+    .hero-name{
+        font-size:2.2rem;
+    }
+
+    #typing{
+        font-size:1.3rem;
+    }
+
+    .hero-desc{
+        font-size:0.95rem;
+        line-height:1.7;
+    }
+
+    .hero-name::after{
+        width:220px;
+        height:130px;
+    }
+
+    section h2{
+        font-size:1.8rem;
+    }
+
+    #project-container{
+        grid-template-columns:1fr;
+    }
+
+    .project-card{
+        padding:20px;
+    }
+
+    .project-card img{
+        height:180px;
+    }
+
+    .skill-card{
+        width:90%;
+    }
+
+    .skills-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .resume-btn{
+        width:90%;
+        text-align:center;
+    }
+
+    footer{
+        font-size:0.8rem;
+        padding:20px;
+    }
+}
+
+/* Very Small Devices */
+@media screen and (max-width: 320px){
+
+    .hero-name{
+        font-size:1.8rem;
+    }
+
+    #typing{
+        font-size:1.1rem;
+    }
+
+    nav ul{
+        font-size:0.8rem;
+        gap:8px;
+    }
+
+    .project-card img{
+        height:150px;
+    }
+}
+
+/* Prevent Overflow */
+img{
+    max-width:100%;
+    height:auto;
+}
+
+html,body{
+    overflow-x:hidden;
+}
+
+p,h1,h2,h3,a{
+    word-wrap:break-word;
+}
